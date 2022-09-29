@@ -1,0 +1,95 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+body{
+    background: url("../images/background4.jpg") no-repeat;
+    background-size:cover ;
+    color: goldenrod;
+    width:100%;
+}
+
+.button {
+    border-radius: 4px;
+    background-color: darkolivegreen;
+    border: none;
+    color: black;
+    font-size: 18px;
+    padding: 10px;
+    width: 150px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+	display: flex;
+	justify-content: center;
+	
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+
+  .button:hover{
+      background-color: goldenrod;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+  .check {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+ 
+}
+
+  #orders {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  }
+
+  h3{
+	  text-align: center;
+  }
+
+#orders td, #orders th {
+  border: 1px solid darkolivegreen;
+  padding: 8px;
+}
+
+#orders tr:nth-child(even){background-color: #f2f2f2;}
+
+#orders tr:hover {background-color: #ddd;}
+
+#orders th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: goldenrod;
+  color: white;
+}

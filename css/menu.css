@@ -1,0 +1,11 @@
+img{
+    max-width: 100%;
+    height:auto;
+    background-color: lightgoldenrodyellow;
+    background: radial-gradient(white 30%,lightgoldenrodyellow 70%);
+}
+
+.fa-star,.fa-star-half{
+    color:darkolivegreen;
+    padding:3% 0%;
+}
